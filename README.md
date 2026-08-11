@@ -2,7 +2,9 @@
 
 Tento repozitář dokumentuje moji cestu učením SQL — od úplných základů až po pokročilejší analytické scénáře, business reporting a databázový design.
 
-🎯 **Cíl projektu:**  
+---
+
+# 🎯 **Cíl projektu:**  
 Dostat se na úroveň junior data analytika a naučit se řešit reálné business problémy pomocí SQL.
 
 ---
@@ -10,7 +12,7 @@ Dostat se na úroveň junior data analytika a naučit se řešit reálné busine
 # 📁 Struktura repozitáře
 
 ```md
-📂 sql-learning-journey
+📂 sql-analytics-portfolio
  ┣ 📄 README.md
  ┣ 📂 sql-case-studies-itnetwork-certification
  ┣ 📂 sql-case-studies-original
@@ -22,7 +24,7 @@ Dostat se na úroveň junior data analytika a naučit se řešit reálné busine
 
 ---
 
-# 🧠 Co se v repozitáři učím
+# 🧠 Hlavní oblasti rozvoje
 
 ## 🔰 SQL základy
 
@@ -91,9 +93,9 @@ Dostat se na úroveň junior data analytika a naučit se řešit reálné busine
 
 ---
 
-# 📊 SQL Case Studies — ITnetwork Certification
+# 📊 Portfolio SQL Case Studies
 
-Série realistických business scénářů zaměřených na datovou analytiku, reporting a databázový design inspirovaných certifikovaným kurzem itnetwork Datová analýza od A do Z, část SQL. Nejedná se tedy o case studies nebo příklady řešené přímo v rámci tohoto kurzu.
+Série realistických business scénářů zaměřených na datovou analytiku, reporting a databázový design inspirovaných certifikovaným kurzem ITnetwork Datová analýza od A do Z, část SQL. Nejedná se tedy o case studies nebo příklady řešené přímo v rámci tohoto kurzu, které jsem rovněž řešil, ale nemohou zde být z důvodu licenčních ustanovení.
 
 ---
 
@@ -485,11 +487,13 @@ Nejde o produkční projekt, ale o:
 - praktický trénink
 - budování analytického myšlení
 - portfolio projektů
-- dokumentaci progresu v oblasti data analytics
+- dokumentaci progresu v oblasti data analytics.
 
 Cílem není jen naučit se syntax SQL, ale chápat:
 
 👉 jak databáze fungují v reálném business prostředí.
 
-Repozitář používá pouze anonymizovaná nebo ukázková data určená pro studijní a portfolio účely.
+---
 
+# Autor
+## **František Papst**
