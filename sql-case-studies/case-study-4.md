@@ -5,7 +5,6 @@
 Procvičit správu databáze a základní optimalizaci výkonu v MS-SQL.
 
 Projekt se zaměřuje na:
-
 - změnu struktury databáze
 - práci s transakcemi
 - databázové pohledy (VIEW)
