@@ -1,7 +1,6 @@
 # SQL Case Study 08 — E-shop Orders & Transactions
 
 Praktická SQL case study zaměřená na:
-
 - foreign keys
 - transakce
 - VIEW
