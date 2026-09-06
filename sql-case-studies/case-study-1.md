@@ -8,7 +8,6 @@ Projekt simuluje databázi fitness centra, ve které spravujeme členy,
 jejich tarify a aktivitu.
 
 Case study je zaměřena na:
-
 - vytváření tabulek
 - vkládání dat
 - úpravu dat
