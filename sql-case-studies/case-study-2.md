@@ -5,7 +5,6 @@
 Procvičit SQL dotazy používané v základní datové analytice na realistickém e-commerce scénáři.
 
 Projekt simuluje databázi produktů internetového obchodu a zaměřuje se na:
-
 - filtrování dat
 - agregace
 - business reporting
