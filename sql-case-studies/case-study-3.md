@@ -5,7 +5,6 @@
 Procvičit SQL dotazy nad více propojenými tabulkami na realistickém e-commerce scénáři.
 
 Projekt simuluje jednoduchý reportingový systém, ve kterém analyzujeme:
-
 - zákazníky
 - objednávky
 - produkty
@@ -460,4 +459,4 @@ Tato case study simuluje běžné úkoly junior datového analytika:
 - kontrola produktových kategorií
 - práce s relačními daty
 - business intelligence reporting
-- příprava dat pro Power BI dashboardy,
+- příprava dat pro Power BI dashboardy.
