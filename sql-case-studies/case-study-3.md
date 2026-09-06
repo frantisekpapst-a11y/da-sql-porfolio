@@ -460,12 +460,4 @@ Tato case study simuluje běžné úkoly junior datového analytika:
 - kontrola produktových kategorií
 - práce s relačními daty
 - business intelligence reporting
-- příprava dat pro Power BI dashboardy
-
----
-
-# Poznámka autora
-
-Projekt vznikl jako součást osobní SQL learning journey inspirované kurzem ITnetwork MS-SQL.
-
-Business scénář i dataset byly vytvořeny jako vlastní originální varianta pro portfolio účely.
+- příprava dat pro Power BI dashboardy,

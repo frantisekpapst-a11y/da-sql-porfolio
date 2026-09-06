@@ -349,13 +349,4 @@ Tato case study simuluje běžné databázové a analytické scénáře:
 - audit změn v databázi
 - sledování historie platů
 - základní databázová automatizace
-- pochopení rozdílu mezi analytickým SQL a databázovou logikou
-
----
-
-# Poznámka autora
-
-Projekt vznikl jako součást osobní SQL learning journey inspirované kurzem ITnetwork MS-SQL.
-
-Část `HAVING` byla prakticky otestována v SQL sandboxu.  
-Část s triggery byla zpracována konceptuálně, protože některá online prostředí nemusí plně podporovat DML triggery v MS-SQL režimu.
+- pochopení rozdílu mezi analytickým SQL a databázovou logikou.

@@ -310,12 +310,4 @@ Tato case study simuluje běžné úkoly datového analytika v e-commerce:
 - business intelligence
 - retail reporting
 - dashboarding v Power BI
-- příprava dat pro management reporting
-
----
-
-# Poznámka autora
-
-Projekt vznikl jako součást osobní SQL learning journey inspirované kurzem ITnetwork MS-SQL.
-
-Business scénář i dataset byly vytvořeny jako vlastní originální varianta pro studijní a portfolio účely.
+- příprava dat pro management reporting.

@@ -154,15 +154,4 @@ Tato case study simuluje běžné úkoly junior datového analytika nebo databá
 - změny tarifů
 - odstraňování neaktivních uživatelů
 - implementace business pravidel
-- základní analytické filtrování
-
----
-
-# Poznámka autora
-
-Projekt vznikl jako součást osobní SQL learning journey
-inspirované kurzem ITnetwork MS-SQL.
-
-Business scénář byl vytvořen jako vlastní originální varianta,
-nikoli jako kopie placených výukových materiálů.
-
+- základní analytické filtrování.

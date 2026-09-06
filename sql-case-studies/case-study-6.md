@@ -1,4 +1,4 @@
-# 📦 SQL Case Study 08 — E-shop Orders & Transactions
+# SQL Case Study 08 — E-shop Orders & Transactions
 
 Praktická SQL case study zaměřená na:
 
@@ -15,7 +15,7 @@ Inspirace: ITnetwork lekce 17–23.
 
 ---
 
-# 🎯 Zadání
+# Zadání
 
 Firma provozuje jednoduchý e-shop.
 
@@ -32,7 +32,7 @@ Potřebujeme řešit:
 
 ---
 
-# 🧱 Návrh databáze
+# Návrh databáze
 
 ## Customers
 
@@ -101,7 +101,7 @@ CREATE TABLE OrderItems (
 
 ---
 
-# 🧠 Business logika relací
+# Business logika relací
 
 ## ON DELETE CASCADE
 
@@ -187,7 +187,7 @@ END CATCH;
 
 ---
 
-# 👁️ VIEW pro reporting
+# VIEW pro reporting
 
 ```sql
 CREATE VIEW OrderReport AS
@@ -217,7 +217,7 @@ FROM OrderReport;
 
 ---
 
-# ⚡ Index pro rychlejší lookup
+# Index pro rychlejší lookup
 
 ```sql
 CREATE INDEX IDX_Customers_Email
@@ -234,7 +234,7 @@ WHERE Email = 'jan@email.cz';
 
 ---
 
-# 🚀 Fulltext Search
+# Fulltext Search
 
 ```sql
 SELECT *
@@ -266,7 +266,7 @@ CONTAINS()
 
 ---
 
-# ⚙️ Trigger — historie mazání objednávek
+# Trigger — historie mazání objednávek
 
 ## History Table
 
@@ -317,7 +317,7 @@ Databáze chrání integritu dat.
 
 ---
 
-# 📚 Procvičené koncepty
+# Procvičené koncepty
 
 ## Databázový design
 
@@ -355,7 +355,7 @@ Databáze chrání integritu dat.
 
 ---
 
-# 🧠 SQL Mindset
+# SQL Mindset
 
 Tato case study propojuje:
 

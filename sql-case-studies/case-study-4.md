@@ -192,9 +192,4 @@ návrh databázové struktury
 práce s databázovým výkonem
 tvorba reportingových pohledů
 práce s transakcemi
-příprava databází pro analytické systémy a Power BI
-Poznámka autora
-
-Projekt vznikl jako součást osobní SQL learning journey inspirované kurzem ITnetwork MS-SQL.
-
-Business scénář i dataset byly vytvořeny jako vlastní studijní varianta pro portfolio a procvičení databázové optimalizace.
+příprava databází pro analytické systémy a Power BI.
