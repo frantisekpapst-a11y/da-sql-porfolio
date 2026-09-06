@@ -5,7 +5,6 @@
 Procvičit práci s agregovanými daty pomocí klauzule `HAVING` a pochopit základní princip DML triggerů v MS-SQL.
 
 Projekt se zaměřuje na:
-
 - filtrování agregovaných výsledků
 - rozdíl mezi `WHERE` a `HAVING`
 - práci s `GROUP BY`
