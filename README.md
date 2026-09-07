@@ -1,499 +1,461 @@
-# 📊 SQL Learning Journey
+# 🗄️ SQL Analytics Portfolio
 
-Tento repozitář dokumentuje moji cestu učením SQL — od úplných základů až po pokročilejší analytické scénáře, business reporting a databázový design.
+Portfolio zaměřené na **SQL, relační databáze, analytické dotazy, business reporting a databázové workflow**.
 
----
+Repozitář obsahuje praktické case studies, SQL příklady a referenční materiály pokrývající práci s relačními daty od základních CRUD operací přes JOINy a agregace až po pokročilejší databázové objekty, transakce, fulltextové vyhledávání a analytické SQL patterny.
 
-# 🎯 **Cíl projektu:**  
-Dostat se na úroveň junior data analytika a naučit se řešit reálné business problémy pomocí SQL.
-
----
-
-# 📁 Struktura repozitáře
-
-```md
-📂 sql-analytics-portfolio
- ┣ 📄 README.md
- ┣ 📂 sql-case-studies-itnetwork-certification
- ┣ 📂 sql-case-studies-original
- ┣ 📂 sql-cheatsheets
- ┣ 📂 sql-examples
- ┣ 📂 sql-mini-tests
- ┣ 📄 sql-certificates.pdf
-  ```
+Hlavní oblasti:
+- relační databáze a datový model,
+- SQL querying,
+- JOINy a práce s vazbami,
+- agregace a business reporting,
+- subqueries, `EXISTS` a CTE,
+- VIEW a reusable reporting logic,
+- transakce a databázová integrita,
+- triggery a procedury,
+- indexy a performance mindset,
+- fulltextové vyhledávání,
+- analytické SQL workflow.
 
 ---
 
-# 🧠 Hlavní oblasti rozvoje
+# 📂 Struktura repozitáře
 
-## 🔰 SQL základy
-
-- SELECT
-- WHERE
-- ORDER BY
-- INSERT / UPDATE / DELETE
-- datové typy
-- CRUD operace
-
----
-
-## 🔗 Relační databáze
-
-- PRIMARY KEY
-- FOREIGN KEY
-- INNER JOIN
-- LEFT JOIN
-- M:N vztahy
-- vazební tabulky
-- integrita dat
-
----
-
-## 📊 Datová analytika
-
-- GROUP BY
-- HAVING
-- agregace
-- revenue reporting
-- customer analytics
-- business reporting
+```text
+sql-analytics-portfolio/
+│
+├── sql-case-studies/
+│   ├── case-study-1.md
+│   ├── case-study-2.md
+│   ├── case-study-3.md
+│   ├── case-study-4.md
+│   ├── case-study-5.md
+│   ├── case-study-6.md
+│   └── sql-case-studies-original/
+│
+├── sql-cheatsheets/
+│   ├── cheatsheet-certification.md
+│   └── cheatsheet-original.md
+│
+├── sql-examples/
+│   ├── examples-certification
+│   └── examples-fiddle
+│
+├── sql-mini-tests/
+│   └── cheatsheet-mini-tests.md
+│
+└── README.md
+```
 
 ---
 
-## 🚀 Pokročilé SQL
+# 🎯 Zaměření portfolia
 
-- CTE
-- subquery
-- EXISTS / NOT EXISTS
-- VIEW
-- window functions
-- ranking
-- analytické patterny
+Repozitář demonstruje práci se SQL v rámci analytického a databázového workflow:
 
----
+```text
+Business Question
+→ Relational Data
+→ Query Logic
+→ Validation
+→ Aggregation / Transformation
+→ Analysis
+→ Reporting
+→ Interpretation
+```
 
-## ⚙️ Databázový backend mindset
+Důraz je kladen nejen na syntaxi SQL, ale také na:
 
-- transakce
-- ACID
-- COMMIT / ROLLBACK
-- triggery
-- procedury
-- indexy
-- fulltext search
-- optimalizace databází
-
----
-
-# 🛠 Používané nástroje
-
-- MS SQL Server
-- SQLize Online Playground
-- GitHub
+- správné pochopení vztahů mezi tabulkami,
+- práci s primárními a cizími klíči,
+- volbu vhodného typu JOINu,
+- tvorbu analytických dotazů,
+- validaci výsledků,
+- porovnávání různých SQL přístupů,
+- business interpretaci výstupů,
+- databázovou konzistenci,
+- opakovatelnost a čitelnost SQL řešení.
 
 ---
 
-# 📊 Portfolio SQL Case Studies
+# 📁 Case Studies
 
-Série realistických business scénářů zaměřených na datovou analytiku, reporting a databázový design inspirovaných certifikovaným kurzem ITnetwork Datová analýza od A do Z, část SQL. Nejedná se tedy o case studies nebo příklady řešené přímo v rámci tohoto kurzu, které jsem rovněž řešil, ale nemohou zde být z důvodu licenčních ustanovení.
+Case studies jsou prezentovány **od nejpokročilejšího a nejreprezentativnějšího projektu po jednodušší SQL úlohy**.
 
----
+Důvodem je portfolio-oriented prezentace, kdy je na prvním místě projekt, který nejlépe reprezentuje aktuální úroveň zkušeností a práce se SQL, databázovým návrhem, business logikou a pokročilejšími databázovými koncepty. Původní číslování zůstává zachováno a zároveň dokumentuje vývoj jednotlivých témat.
 
-## 📘 Case Study 01 — Fitness Center Membership Management
-
-Základy SQL nad databází členů fitness centra.
-
-### Procvičené oblasti
-
-- CREATE TABLE
-- INSERT
-- UPDATE
-- DELETE
-- WHERE
-- základní business logika
-
-### Business témata
-
-- správa zákazníků
-- změny tarifů
-- filtrování aktivních členů
+> Složka `sql-case-studies-original` obsahuje starší samostatné SQL úlohy vytvořené před hlavní sérií case studies. Hlavní část portfolia tvoří šest níže uvedených projektů.
 
 ---
 
-## 📘 Case Study 02 — E-commerce Product Analytics
+## Case Study 06 — E-shop Orders & Transactions
 
-Produktová analytika nad databází e-shopu.
+Nejkomplexnější SQL case study v repozitáři propojující databázový návrh, integritu dat, transakční logiku, reporting a pokročilejší databázové funkce.
 
-### Procvičené oblasti
+Použité koncepty:
 
-- SELECT
-- WHERE
-- GROUP BY
-- HAVING
-- agregace
-- business reporting
+- `FOREIGN KEY`,
+- `ON DELETE CASCADE`,
+- `ON DELETE NO ACTION`,
+- `VIEW`,
+- `INDEX`,
+- transakce,
+- `COMMIT`,
+- `ROLLBACK`,
+- triggery,
+- fulltext search,
+- databázová integrita,
+- audit logika.
 
-### Business témata
+Business témata:
 
-- produktová analytika
-- skladová analytika
-- revenue reporting
-- cenová analýza
+- e-shop objednávky,
+- skladové zásoby,
+- integrita dat,
+- audit mazání objednávek,
+- revenue reporting,
+- databázová konzistence.
 
----
+Projekt ukazuje, jak se SQL používá nejen pro analytické dotazy, ale také pro bezpečné řízení datových operací v relační databázi.
 
-## 📘 Case Study 03 — SQL Reporting & Relational Analysis
-
-Práce s více propojenými tabulkami a analytickými SQL patterny.
-
-### Procvičené oblasti
-
-- INNER JOIN
-- LEFT JOIN
-- EXISTS
-- NOT EXISTS
-- subquery
-- CTE
-- M:N vztahy
-
-### Business témata
-
-- customer reporting
-- revenue analýza
-- zákazníci bez objednávek
-- produktové kategorie
+➡️ [Otevřít Case Study 06](sql-case-studies/case-study-6.md)
 
 ---
 
-## 📘 Case Study 04 — Database Automation & Triggers
+## Case Study 05 — Fulltext Search & Reporting
 
-Automatizace databázových procesů pomocí triggerů a procedur.
+Case study zaměřená na fulltextové vyhledávání a reporting nad textovými daty.
 
-### Procvičené oblasti
+Použité koncepty:
 
-- TRIGGERY
-- inserted / deleted
-- procedury
-- TRY / CATCH
-- DECLARE
-- IF ELSE
+- `CONTAINS`,
+- `FREETEXT`,
+- `CONTAINSTABLE`,
+- `FREETEXTTABLE`,
+- `VIEW`,
+- agregace,
+- relevance výsledků.
 
-### Business témata
+Business témata:
 
-- audit změn
-- automatizace databáze
-- historie operací
-- business pravidla
+- vyhledávání produktů,
+- textová analytika,
+- relevance výsledků,
+- reporting nad vyhledáváním.
 
----
+Projekt ukazuje rozdíl mezi běžným filtrováním textu a specializovaným fulltextovým vyhledáváním.
 
-## 📘 Case Study 05 — Fulltext Search & Reporting
-
-Práce s fulltextovým vyhledáváním a reportingem.
-
-### Procvičené oblasti
-
-- CONTAINS
-- FREETEXT
-- CONTAINSTABLE
-- FREETEXTTABLE
-- VIEW
-- agregace
-
-### Business témata
-
-- vyhledávání produktů
-- relevance výsledků
-- reporting dat
-- textová analytika
+➡️ [Otevřít Case Study 05](sql-case-studies/case-study-5.md)
 
 ---
 
-## 📘 Case Study 06 — E-shop Orders & Transactions
+## Case Study 04 — Database Automation & Triggers
 
-Komplexnější business case propojující databázový design a business logiku.
+Projekt zaměřený na automatizaci databázových procesů pomocí triggerů a procedur.
 
-### Procvičené oblasti
+Použité koncepty:
 
-- FOREIGN KEY
-- ON DELETE CASCADE
-- ON DELETE NO ACTION
-- VIEW
-- INDEX
-- TRANSAKCE
-- ROLLBACK
-- TRIGGERY
-- FULLTEXT SEARCH
+- triggery,
+- `inserted`,
+- `deleted`,
+- procedury,
+- `TRY / CATCH`,
+- `DECLARE`,
+- `IF / ELSE`,
+- audit logika,
+- automatizace databázových operací.
 
-### Business témata
+Business témata:
 
-- e-shop objednávky
-- skladové zásoby
-- integrita dat
-- audit mazání objednávek
-- revenue reporting
-- databázová konzistence
+- audit změn,
+- historie operací,
+- databázová automatizace,
+- implementace business pravidel.
 
----
+Cílem je ukázat, jak lze přesunout opakovatelnou databázovou logiku blíže k datové vrstvě.
 
-# 📊 SQL Case Studies Original
-
-Vlastní analytické mini projekty zaměřené na business reporting a customer analytics.
+➡️ [Otevřít Case Study 04](sql-case-studies/case-study-4.md)
 
 ---
 
-## 📘 Case Study 01 — Customer Analysis
+## Case Study 03 — SQL Reporting & Relational Analysis
 
-### Řešené problémy
+Case study zaměřená na práci s více propojenými tabulkami a analytickými SQL patterny.
 
-- revenue zákazníků
-- počet objednávek
-- průměrné hodnoty objednávek
+Použité koncepty:
 
----
+- `INNER JOIN`,
+- `LEFT JOIN`,
+- `EXISTS`,
+- `NOT EXISTS`,
+- subqueries,
+- CTE,
+- M:N relationships,
+- vazební tabulky.
 
-## 📘 Case Study 02 — Product & Customer Analysis
+Business témata:
 
-### Řešené problémy
+- customer reporting,
+- revenue analýza,
+- identifikace zákazníků bez objednávek,
+- produktové kategorie,
+- práce s relačním modelem.
 
-- revenue podle produktů
-- revenue podle kategorií
-- customer reporting
+Projekt ukazuje více způsobů, jak řešit analytické otázky nad propojenými daty.
 
----
-
-## 📘 Case Study 03 — Top Category per Customer
-
-### SQL témata
-
-- ROW_NUMBER()
-- CASE WHEN
-- CTE
-
----
-
-## 📘 Case Study 04 — Customer Revenue Trend Analysis
-
-### SQL témata
-
-- LAG()
-- window functions
-- časové analýzy
+➡️ [Otevřít Case Study 03](sql-case-studies/case-study-3.md)
 
 ---
 
-## 📘 Case Study 05 — Customer Revenue Trends & Growth Analysis
+## Case Study 02 — E-commerce Product Analytics
 
-### Řešené problémy
+Projekt zaměřený na produktovou analytiku a business reporting nad e-commerce daty.
 
-- growth vs decline
-- revenue změny
-- klasifikace zákazníků
+Použité koncepty:
 
----
+- `SELECT`,
+- `WHERE`,
+- `GROUP BY`,
+- `HAVING`,
+- agregace,
+- filtrování agregovaných výsledků,
+- business reporting.
 
-## 📘 Case Study 06 — Top Growing Customers
+Business témata:
 
-### SQL témata
+- produktová analytika,
+- skladová analytika,
+- revenue reporting,
+- cenová analýza.
 
-- ranking
-- ROW_NUMBER()
-- TOP customers
+Projekt ukazuje přechod od jednoduchých SQL dotazů k analytickému reportingu.
 
----
-
-## 📘 Case Study 07 — Customer Value Analysis
-
-### SQL témata
-
-- COALESCE
-- CASE WHEN
-- RANK()
-- LEFT JOIN
+➡️ [Otevřít Case Study 02](sql-case-studies/case-study-2.md)
 
 ---
 
-## 📘 Case Study 08 — Customer Activity Gaps
+## Case Study 01 — Fitness Center Membership Management
 
-### SQL témata
+Case study zaměřená na základní práci s relační databází a CRUD operacemi.
 
-- LAG()
-- DATEDIFF()
-- CTE
+Použité koncepty:
 
----
+- `CREATE TABLE`,
+- `INSERT`,
+- `UPDATE`,
+- `DELETE`,
+- `WHERE`,
+- datové typy,
+- základní business logika.
 
-## 📘 Case Study 09 — Latest Customer Revenue Status
+Business témata:
 
-### SQL témata
+- správa zákazníků,
+- členství,
+- změny tarifů,
+- filtrování aktivních členů.
 
-- ROW_NUMBER()
-- LAG()
-- CASE WHEN
-- komplexní CTE pipeline
+Projekt tvoří základ pro navazující analytické a databázové scénáře.
 
----
-
-# 📄 SQL Cheatsheets
-
-## 📘 `sql-cheatsheet-itnetwork-certification.md`
-
-Kompletní přehled SQL syntaxe a poznámek z ITnetwork learning journey.
-
-Obsahuje:
-
-- syntaxe SQL
-- SQL mindset
-- JOIN patterny
-- agregace
-- poddotazy
-- CTE
-- VIEW
-- triggery
-- procedury
-- transakce
-- fulltext search
-- indexy
-- foreign keys
+➡️ [Otevřít Case Study 01](sql-case-studies/case-study-1.md)
 
 ---
 
-## 📘 `sql-cheatsheet.md`
+# 🧩 SQL Skills
 
-Vlastní rozšířený SQL cheatsheet.
+Portfolio pokrývá praktickou práci s SQL od základního queryingu až po pokročilejší databázové scénáře.
 
-Obsahuje:
+Hlavní oblasti:
 
-- business reporting patterny
-- customer analytics
-- revenue reporting
-- SQL debugging
-- performance mindset
-- databázové best practices
-- analytické SQL workflow
+- `SELECT`, `WHERE`, `ORDER BY`, `TOP`, `LIKE`, `IN`, `BETWEEN`,
+- `INSERT`, `UPDATE`, `DELETE`,
+- primary keys, foreign keys a relační vazby,
+- `INNER JOIN`, `LEFT JOIN`,
+- agregace, `GROUP BY`, `HAVING`,
+- subqueries,
+- `EXISTS`, `NOT EXISTS`,
+- CTE,
+- `VIEW`,
+- transakce, `COMMIT`, `ROLLBACK`,
+- ACID principy,
+- triggery,
+- stored procedures,
+- `TRY / CATCH`,
+- indexy,
+- fulltext search,
+- referenční integrita,
+- business reporting,
+- analytické SQL patterny.
 
----
+Důraz je kladen na:
 
-# 🧪 SQL Mini Tests
+```text
+správnou logiku dotazu
+→ validaci výsledků
+→ čitelnost řešení
+→ business interpretaci
+```
 
-## 📘 `sql-itnetwork-certification-mini-tests.md`
-
-Mini testy k jednotlivým lekcím.
-
-Zaměřeno na:
-
-- procvičení syntaxe
-- pochopení SQL logiky
-- práci s daty
-- analytické přemýšlení
-- databázový design
-
----
-
-## 📘 `sql-cheatsheet-mini-tests.md`
-
-Vlastní opakovací mini testy.
-
-Obsahují:
-
-- JOIN otázky
-- agregace
-- business scénáře
-- SQL debugging
-- foreign keys
-- transakce
-- rozdíly mezi SQL patterny
+Detailní syntaxe, příklady a poznámky jsou součástí SQL cheatsheetů a examples sekce repozitáře.
 
 ---
 
-# 📘 SQL Examples
+# 📂 SQL Examples
 
-Praktické SQL ukázky inspirované ITnetwork learning path.
+## examples-certification
 
-## 📂 `sql-examples-itnetwork-certification`
+Praktické SQL příklady pokrývající například:
 
-Obsahuje:
+- `CREATE DATABASE`,
+- `CREATE TABLE`,
+- `INSERT`,
+- `UPDATE`,
+- `DELETE`,
+- `TRUNCATE`,
+- `DROP`,
+- `SELECT`,
+- `WHERE`,
+- `LIKE`,
+- `IN`,
+- `BETWEEN`,
+- `ORDER BY`,
+- `TOP`,
+- agregace,
+- `GROUP BY`,
+- `HAVING`,
+- JOINy,
+- subqueries,
+- `EXISTS`,
+- CTE,
+- `ALTER TABLE`,
+- `VIEW`,
+- indexy,
+- transakce,
+- triggery,
+- procedury,
+- fulltext search,
+- foreign keys.
 
-- CREATE DATABASE
-- CREATE TABLE
-- INSERT INTO
-- UPDATE
-- DELETE / TRUNCATE / DROP
-- SELECT
-- WHERE
-- LIKE
-- IN
-- BETWEEN
-- ORDER BY
-- TOP
-- COUNT / SUM / AVG / MIN / MAX
-- GROUP BY
-- HAVING
-- JOIN
-- subquery
-- EXISTS / NOT EXISTS
-- CTE
-- ALTER TABLE
-- VIEW
-- INDEXY
-- TRANSAKCE
-- TRIGGERY
-- PROCEDURY
-- FULLTEXT SEARCH
-- FOREIGN KEYS
-
----
-
-## 📂 `sql-fiddle-examples`
-
-Praktické SQL playground příklady a experimenty.
-
-Zaměřeno na:
-
-- analytické patterny
-- testování JOINů
-- práci s agregacemi
-- business reporting
-- debugging SQL dotazů
-- modelování databází
-- SQL experimentation
+➡️ [SQL Certification Examples](sql-examples/examples-certification)
 
 ---
 
-# 🎯 Learning roadmap
+## examples-fiddle
 
-🔄 Opakování + závěrečný test (88 %)
+Samostatné SQL playground příklady a experimenty zaměřené na:
 
-Další plánovaný směr:
+- testování SQL syntaxe,
+- JOIN logiku,
+- agregace,
+- analytické patterny,
+- business reporting,
+- debugging dotazů,
+- databázové modelování,
+- porovnávání variant řešení.
 
-- Úvod do datové analytiky
-- Power Query
-- Power BI
-- DAX
-- Python (pandas, EDA)
-- dashboarding
-- business intelligence
-
-👉 SQL je základní stavební kámen celé learning journey.
-
----
-
-# 📌 Poznámka autora
-
-Tento repozitář slouží jako dokumentace mého praktického učení SQL a datové analytiky.
-
-Nejde o produkční projekt, ale o:
-
-- praktický trénink
-- budování analytického myšlení
-- portfolio projektů
-- dokumentaci progresu v oblasti data analytics.
-
-Cílem není jen naučit se syntax SQL, ale chápat:
-
-👉 jak databáze fungují v reálném business prostředí.
+➡️ [SQL Fiddle Examples](sql-examples/examples-fiddle)
 
 ---
 
-# Autor
-## **František Papst**
+# 📚 Knowledge Base
+
+## sql-cheatsheets
+
+Repozitář obsahuje dvě SQL reference.
+
+### Certification Cheatsheet
+
+[cheatsheet-certification.md](sql-cheatsheets/cheatsheet-certification.md)
+
+Obsahuje například:
+
+- SQL syntax,
+- JOINy,
+- agregace,
+- subqueries,
+- CTE,
+- VIEW,
+- triggery,
+- procedury,
+- transakce,
+- fulltext search,
+- indexy,
+- foreign keys.
+
+### Original Cheatsheet
+
+[cheatsheet-original.md](sql-cheatsheets/cheatsheet-original.md)
+
+Rozšířená vlastní SQL reference zaměřená například na:
+
+- analytické SQL patterny,
+- business reporting,
+- customer analytics,
+- revenue reporting,
+- debugging,
+- performance mindset,
+- databázové best practices.
+
+---
+
+## sql-mini-tests
+
+Sada znalostních testů zaměřených na:
+
+- JOINy,
+- agregace,
+- business scénáře,
+- SQL debugging,
+- foreign keys,
+- transakce,
+- rozdíly mezi SQL patterny,
+- databázovou logiku.
+
+➡️ [SQL Mini Tests](sql-mini-tests/)
+
+---
+
+# 🛠 Technologie a koncepty
+
+```text
+Microsoft SQL Server
+T-SQL
+Relational Databases
+CRUD
+Primary Keys
+Foreign Keys
+JOINs
+Aggregations
+Subqueries
+CTE
+Views
+Transactions
+Triggers
+Stored Procedures
+Indexes
+Fulltext Search
+Business Reporting
+Data Analytics
+Git
+GitHub
+```
+
+Pro experimentování a rychlé testování SQL jsou využívána také online SQL prostředí.
+
+---
+
+# 📈 Další rozvoj
+
+Portfolio je dále rozšiřováno prostřednictvím projektů, které propojují SQL s dalšími analytickými technologiemi.
+
+Navazující oblasti zahrnují například:
+
+- SQL + Python,
+- `pd.read_sql()`,
+- parametrizované dotazy,
+- přípravu dat pro Power BI,
+- databázové views pro reporting,
+- automatizované datové pipeline,
+- větší datasety,
+- performance tuning,
+- end-to-end analytické projekty.
