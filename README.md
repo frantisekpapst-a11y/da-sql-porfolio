@@ -22,7 +22,7 @@ Hlavní oblasti:
 # 📂 Struktura repozitáře
 
 ```text
-sql-analytics-portfolio/
+da-sql-portfolio/
 │
 ├── sql-case-studies/
 │   ├── case-study-1.md
@@ -441,21 +441,3 @@ GitHub
 ```
 
 Pro experimentování a rychlé testování SQL jsou využívána také online SQL prostředí.
-
----
-
-# 📈 Další rozvoj
-
-Portfolio je dále rozšiřováno prostřednictvím projektů, které propojují SQL s dalšími analytickými technologiemi.
-
-Navazující oblasti zahrnují například:
-
-- SQL + Python,
-- `pd.read_sql()`,
-- parametrizované dotazy,
-- přípravu dat pro Power BI,
-- databázové views pro reporting,
-- automatizované datové pipeline,
-- větší datasety,
-- performance tuning,
-- end-to-end analytické projekty.
