@@ -1,4 +1,4 @@
-# 🗄️ SQL Analytics Portfolio
+# 🗄️ Data Analytics SQL Portfolio
 
 Portfolio zaměřené na **SQL, relační databáze, analytické dotazy, business reporting a databázové workflow**.
 
