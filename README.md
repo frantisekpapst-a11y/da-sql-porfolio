@@ -31,6 +31,7 @@ da-sql-portfolio/
 │   ├── case-study-4.md
 │   ├── case-study-5.md
 │   ├── case-study-6.md
+│   ├── case-study-7/
 │   └── sql-case-studies-original/
 │
 ├── sql-cheatsheets/
@@ -52,7 +53,6 @@ da-sql-portfolio/
 # 🎯 Zaměření portfolia
 
 Repozitář demonstruje práci se SQL v rámci analytického a databázového workflow:
-
 ```text
 Business Question
 → Relational Data
@@ -65,7 +65,6 @@ Business Question
 ```
 
 Důraz je kladen nejen na syntaxi SQL, ale také na:
-
 - správné pochopení vztahů mezi tabulkami,
 - práci s primárními a cizími klíči,
 - volbu vhodného typu JOINu,
@@ -84,7 +83,38 @@ Case studies jsou prezentovány **od nejpokročilejšího a nejreprezentativněj
 
 Důvodem je portfolio-oriented prezentace, kdy je na prvním místě projekt, který nejlépe reprezentuje aktuální úroveň zkušeností a práce se SQL, databázovým návrhem, business logikou a pokročilejšími databázovými koncepty. Původní číslování zůstává zachováno a zároveň dokumentuje vývoj jednotlivých témat.
 
-> Složka `sql-case-studies-original` obsahuje starší samostatné SQL úlohy vytvořené před hlavní sérií case studies. Hlavní část portfolia tvoří šest níže uvedených projektů.
+> Složka `sql-case-studies-original` obsahuje starší samostatné SQL úlohy vytvořené před hlavní sérií case studies. Hlavní část portfolia tvoří sedm níže uvedených projektů.
+
+---
+
+## Case Study 07 — Orders & Revenue Analysis | SQL Server & Excel
+
+Analytická case study propojující validaci a čištění dat v SQL Serveru s analýzou, vizualizací a popisnou statistikou v Excelu.
+
+Syntetická data pokrývají rok 2025: 80 zákazníků a 1 005 zdrojových řádků objednávek. Po odstranění duplicit a vyřazení problematických záznamů analýza pracuje s **995 objednávkami od 76 zákazníků**.
+
+Použité koncepty:
+- validace datových typů, duplicit, chybějících hodnot a referenční integrity,
+- raw a clean tabulky, oddělení objednávek k prověření,
+- `TRIM`, `COALESCE`, `JOIN` a agregace,
+- CTE a okenní funkce `ROW_NUMBER()`, `LAG()` a `RANK()`,
+- analytický `VIEW` a načtení přes Power Query,
+- kontingenční tabulky, grafy, mediány a korelace v Excelu.
+
+Business témata:
+- měsíční vývoj objednávek a tržeb,
+- meziměsíční změny a průměrná hodnota objednávky,
+- porovnání segmentů B2B a B2C,
+- TOP zákazníci a jejich podíl na tržbách.
+
+Hlavní zjištění:
+- celkové tržby **5 000 741,75 Kč**, segment B2B tvoří **82,72 % tržeb**,
+- silná kladná souvislost měsíčního počtu objednávek a tržeb: **r = 0,83**,
+- TOP 3 zákazníci tvoří **16,16 % tržeb B2B** a **10,15 % tržeb B2C**.
+
+Projekt ukazuje celé analytické workflow od kontroly zdrojových dat přes SQL analýzu až po ověření výsledků v Excelu a formulaci doporučení. Součástí jsou SQL skripty, Excelový sešit, screenshoty a zjištění s omezeními analýzy.
+
+➡️ [Otevřít Case Study 07](sql-case-studies/case-study-7/README.md)
 
 ---
 
@@ -93,7 +123,6 @@ Důvodem je portfolio-oriented prezentace, kdy je na prvním místě projekt, kt
 Nejkomplexnější SQL case study v repozitáři propojující databázový návrh, integritu dat, transakční logiku, reporting a pokročilejší databázové funkce.
 
 Použité koncepty:
-
 - `FOREIGN KEY`,
 - `ON DELETE CASCADE`,
 - `ON DELETE NO ACTION`,
@@ -108,7 +137,6 @@ Použité koncepty:
 - audit logika.
 
 Business témata:
-
 - e-shop objednávky,
 - skladové zásoby,
 - integrita dat,
@@ -127,7 +155,6 @@ Projekt ukazuje, jak se SQL používá nejen pro analytické dotazy, ale také p
 Case study zaměřená na fulltextové vyhledávání a reporting nad textovými daty.
 
 Použité koncepty:
-
 - `CONTAINS`,
 - `FREETEXT`,
 - `CONTAINSTABLE`,
@@ -137,7 +164,6 @@ Použité koncepty:
 - relevance výsledků.
 
 Business témata:
-
 - vyhledávání produktů,
 - textová analytika,
 - relevance výsledků,
@@ -154,7 +180,6 @@ Projekt ukazuje rozdíl mezi běžným filtrováním textu a specializovaným fu
 Projekt zaměřený na automatizaci databázových procesů pomocí triggerů a procedur.
 
 Použité koncepty:
-
 - triggery,
 - `inserted`,
 - `deleted`,
@@ -166,7 +191,6 @@ Použité koncepty:
 - automatizace databázových operací.
 
 Business témata:
-
 - audit změn,
 - historie operací,
 - databázová automatizace,
@@ -183,7 +207,6 @@ Cílem je ukázat, jak lze přesunout opakovatelnou databázovou logiku blíže 
 Case study zaměřená na práci s více propojenými tabulkami a analytickými SQL patterny.
 
 Použité koncepty:
-
 - `INNER JOIN`,
 - `LEFT JOIN`,
 - `EXISTS`,
@@ -194,7 +217,6 @@ Použité koncepty:
 - vazební tabulky.
 
 Business témata:
-
 - customer reporting,
 - revenue analýza,
 - identifikace zákazníků bez objednávek,
@@ -212,7 +234,6 @@ Projekt ukazuje více způsobů, jak řešit analytické otázky nad propojeným
 Projekt zaměřený na produktovou analytiku a business reporting nad e-commerce daty.
 
 Použité koncepty:
-
 - `SELECT`,
 - `WHERE`,
 - `GROUP BY`,
@@ -222,7 +243,6 @@ Použité koncepty:
 - business reporting.
 
 Business témata:
-
 - produktová analytika,
 - skladová analytika,
 - revenue reporting,
@@ -239,7 +259,6 @@ Projekt ukazuje přechod od jednoduchých SQL dotazů k analytickému reportingu
 Case study zaměřená na základní práci s relační databází a CRUD operacemi.
 
 Použité koncepty:
-
 - `CREATE TABLE`,
 - `INSERT`,
 - `UPDATE`,
@@ -249,7 +268,6 @@ Použité koncepty:
 - základní business logika.
 
 Business témata:
-
 - správa zákazníků,
 - členství,
 - změny tarifů,
@@ -266,7 +284,6 @@ Projekt tvoří základ pro navazující analytické a databázové scénáře.
 Portfolio pokrývá praktickou práci s SQL od základního queryingu až po pokročilejší databázové scénáře.
 
 Hlavní oblasti:
-
 - `SELECT`, `WHERE`, `ORDER BY`, `TOP`, `LIKE`, `IN`, `BETWEEN`,
 - `INSERT`, `UPDATE`, `DELETE`,
 - primary keys, foreign keys a relační vazby,
@@ -288,7 +305,6 @@ Hlavní oblasti:
 - analytické SQL patterny.
 
 Důraz je kladen na:
-
 ```text
 správnou logiku dotazu
 → validaci výsledků
@@ -305,7 +321,6 @@ Detailní syntaxe, příklady a poznámky jsou součástí SQL cheatsheetů a ex
 ## examples-certification
 
 Praktické SQL příklady pokrývající například:
-
 - `CREATE DATABASE`,
 - `CREATE TABLE`,
 - `INSERT`,
@@ -343,7 +358,6 @@ Praktické SQL příklady pokrývající například:
 ## examples-fiddle
 
 Samostatné SQL playground příklady a experimenty zaměřené na:
-
 - testování SQL syntaxe,
 - JOIN logiku,
 - agregace,
@@ -368,7 +382,6 @@ Repozitář obsahuje dvě SQL reference.
 [cheatsheet-certification.md](sql-cheatsheets/cheatsheet-certification.md)
 
 Obsahuje například:
-
 - SQL syntax,
 - JOINy,
 - agregace,
@@ -387,7 +400,6 @@ Obsahuje například:
 [cheatsheet-original.md](sql-cheatsheets/cheatsheet-original.md)
 
 Rozšířená vlastní SQL reference zaměřená například na:
-
 - analytické SQL patterny,
 - business reporting,
 - customer analytics,
@@ -401,7 +413,6 @@ Rozšířená vlastní SQL reference zaměřená například na:
 ## sql-mini-tests
 
 Sada znalostních testů zaměřených na:
-
 - JOINy,
 - agregace,
 - business scénáře,
@@ -420,6 +431,8 @@ Sada znalostních testů zaměřených na:
 ```text
 Microsoft SQL Server
 T-SQL
+DB Fiddle
+SQLite
 Relational Databases
 CRUD
 Primary Keys
@@ -439,5 +452,3 @@ Data Analytics
 Git
 GitHub
 ```
-
-Pro experimentování a rychlé testování SQL jsou využívána také online SQL prostředí.
